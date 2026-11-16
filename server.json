@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.VaibhavBansal26/grants-discovery-mcp-server",
-  "description": "Search US federal grants on Grants.gov, read full NOFO details, and research past awards on USAspending. No API key.",
+  "description": "Search US federal grants, read NOFO details, and research past awards. No API key.",
   "repository": { "url": "https://github.com/VaibhavBansal26/grants-discovery-mcp-server", "source": "github" },
   "version": "0.1.0",
   "packages": [
