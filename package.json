@@ -1,0 +1,52 @@
+{
+  "name": "grants-discovery-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for discovering US federal grants: search Grants.gov opportunities, read full NOFO details, and look up past awards on USAspending. No API keys required.",
+  "type": "module",
+  "license": "MIT",
+  "mcpName": "io.github.VaibhavBansal26/grants-discovery-mcp-server",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "grants",
+    "grants.gov",
+    "usaspending",
+    "nofo",
+    "funding"
+  ],
+  "bin": {
+    "grants-discovery-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "smoke": "tsx scripts/smoke.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=20.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.3.1",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.3.1",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaibhavBansal26/grants-discovery-mcp-server.git"
+  },
+  "homepage": "https://github.com/VaibhavBansal26/grants-discovery-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/VaibhavBansal26/grants-discovery-mcp-server/issues"
+  }
+}
